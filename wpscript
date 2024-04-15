@@ -1,0 +1,13 @@
+#!/bin/sh
+
+file_path="/home/$USER/Downloads/wallhaven-qzveyd.jpg"
+if [ ! -e "$file_path" ]; then
+        echo "It worked"
+        wget -P "/home/$USER/Downloads" "https://w.wallhaven.cc/full/qz/wallhaven-qzveyd.jpg"
+fi
+
+xwallpaper --zoom ~/Downloads/wallhaven-qzveyd.jpg
+wal -c
+wal -i ~/Downloads/wallhaven-qzveyd.jpg
+
+xdotool key super+F5
