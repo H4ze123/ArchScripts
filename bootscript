@@ -1,0 +1,8 @@
+#!/bin/sh
+
+xwallpaper --zoom ~/Downloads/wallhaven-qzveyd.jpg
+
+wal -c
+wal -i ~/Downloads/wallhaven-qzveyd.jpg
+
+xdotool key super+F5
